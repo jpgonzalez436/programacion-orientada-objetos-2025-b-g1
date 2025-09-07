@@ -5,7 +5,7 @@
 **Lenguaje:** Python  
 **Tema:** Programación Orientada a Objetos (POO)  
 **Interfaz:** Consola (CLI)
-
+**Video Explicativo:** https://drive.google.com/drive/folders/11aB77724twlFVvywYhfikBuK7RWPQMq9?usp=drive_link
 ## 🎯 Descripción del Proyecto
 
 Este proyecto simula el funcionamiento básico de una **biblioteca digital**, aplicando los 4 pilares fundamentales de la **Programación Orientada a Objetos (POO)** en Python.
