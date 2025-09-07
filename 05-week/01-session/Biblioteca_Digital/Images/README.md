@@ -47,41 +47,58 @@ Todo esto desde una **interfaz de línea de comandos (CLI)** interactiva.
 
 ### 👤 Gestión de usuarios
 En el código:
+
 ![alt text](image-4.png)
+
 ![alt text](image-3.png)
+
 En la ejecución:
+
 ![alt text](image-2.png)
 
 ---
 
 ### 📦 Materiales registrados
 En el código:
+
 ![alt text](image-6.png)
+
 ![alt text](image-7.png)
+
 En la ejecución:
+
 ![alt text](image-5.png)
 ---
 
 ### ✅ Préstamo exitoso
 En el código:
+
 ![alt text](image-8.png)
+
 En la ejecución:
+
 ![alt text](image-9.png)
 
 ---
 
 ### 🔁 Devolución con multa
 En el código:
+
 ![alt text](image-10.png)
+
 En la ejecución:
+
 ![alt text](image-11.png)
 
 ---
 
 ### 📊 Reporte de préstamos activos
 En el código:
+
 ![alt text](image-13.png)
+
 En la ejecución:
+
 ![alt text](image-12.png)
 ---
 
