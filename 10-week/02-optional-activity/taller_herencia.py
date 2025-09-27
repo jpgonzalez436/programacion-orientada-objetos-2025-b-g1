@@ -62,6 +62,7 @@ class Profesor(Persona):
         new_info = super().mostrar_info()  
         return f"{new_info}, asignatura: {self.asignatura}, salario: ${self.salario} COP, años de experiencia: {self.experiencia} años"
         
+#PROGRAMA PRINCIPAL
     
 Persona1 = Persona("Carlos Enrique Cuellar", 40, 10423802, "Cuellar.e@gmail.com")
 Estudiante1= Estudiante ("Juan Pablo Gonzalez", 22, 1002580215, "jpgonzales-2024b@corhuila.edu.co", "Ingeniería Mecatrónica", 3, 4.67)
