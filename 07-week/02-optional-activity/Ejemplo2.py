@@ -26,7 +26,7 @@ print("La nota del parcial 2 es :" , nota2["p2"])
 print(f"Las notas de la autoevaluación y coevaluación son: {nota3}")
 #Sacar porcentajes
 def porcentajes(notas, porcentaje):
-    promedio = 0
+    promedio = 0 
     total = 0
     for i in notas:
         promedio += notas[i]
