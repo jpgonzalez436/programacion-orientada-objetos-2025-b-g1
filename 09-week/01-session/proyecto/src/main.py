@@ -7,6 +7,6 @@
 #  Y Un profesor orienta materias {subject_academic}. 
 from security.person import Person
 from security.user import User
-Persona1 = Person("CC", 1002580816,"juan","gonzalez", "date: 19-11-2002" , "gonzalez@gmail")
-User1= User("juangonza", 1234, Persona1 )
+
+User1= User("juangonza", 1234, Person("CC", 1002580816,"juan","gonzalez", "date: 19-11-2002" , "gonzalez@gmail") )
 print (User1)
