@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📊 Dashboard - Sistema de Gestión</h1>
+            <p>Panel de Control y Estadísticas</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="empresa.html">Empresa</a>
+                        <a href="sede.html">Sedes</a>
+                        <a href="bloque.html">Bloques</a>
+                        <a href="salon.html">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="categoria.html">Categorías</a>
+                        <a href="elemento.html">Elementos</a>
+                        <a href="recurso-salon.html">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Resumen General del Sistema</h2>
+                <p>Vista general de todos los recursos y entidades del sistema</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🏢 Empresa</h3>
+                    <p><strong>Total:</strong> 1 empresa</p>
+                    <p>CORHUILA</p>
+                    <a href="empresa.html" class="btn">Ver detalles</a>
+                </div>
+
+                <div class="card">
+                    <h3>🏫 Sedes</h3>
+                    <p><strong>Total:</strong> 2 sedes</p>
+                    <ul>
+                        <li>Sede Quirinal</li>
+                        <li>Sede Prado Alto</li>
+                    </ul>
+                    <a href="sede.html" class="btn">Ver detalles</a>
+                </div>
+
+                <div class="card">
+                    <h3>🏛️ Bloques</h3>
+                    <p><strong>Total:</strong> 7 bloques</p>
+                    <p>Distribuidos en 2 sedes</p>
+                    <a href="bloque.html" class="btn">Ver detalles</a>
+                </div>
+
+                <div class="card">
+                    <h3>🚪 Salones</h3>
+                    <p><strong>Total:</strong> 4 salones</p>
+                    <p>Capacidad total: 120 personas</p>
+                    <a href="salon.html" class="btn">Ver detalles</a>
+                </div>
+
+                <div class="card">
+                    <h3>📂 Categorías</h3>
+                    <p><strong>Total:</strong> 6 categorías</p>
+                    <p>Computadores, Muebles, Videobeam, etc.</p>
+                    <a href="categoria.html" class="btn">Ver detalles</a>
+                </div>
+
+                <div class="card">
+                    <h3>📦 Elementos</h3>
+                    <p><strong>Total:</strong> 11 elementos</p>
+                    <p>Inventario completo de recursos</p>
+                    <a href="elemento.html" class="btn">Ver detalles</a>
+                </div>
+
+                <div class="card">
+                    <h3>🔗 Recursos Asignados</h3>
+                    <p><strong>Total:</strong> 7 asignaciones</p>
+                    <p>Recursos distribuidos por salón</p>
+                    <a href="recurso-salon.html" class="btn">Ver detalles</a>
+                </div>
+            </div>
+
+            <div class="entity-content" style="margin-top: 30px;">
+                <h3>📈 Estadísticas Rápidas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Entidad</th>
+                            <th>Cantidad</th>
+                            <th>Observaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Empresas</td>
+                            <td>1</td>
+                            <td>Corporación Universitaria del Huila</td>
+                        </tr>
+                        <tr>
+                            <td>Sedes</td>
+                            <td>2</td>
+                            <td>Quirinal y Prado Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Bloques</td>
+                            <td>7</td>
+                            <td>3 en Quirinal, 4 en Prado Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Salones</td>
+                            <td>4</td>
+                            <td>Capacidad promedio: 30 personas</td>
+                        </tr>
+                        <tr>
+                            <td>Categorías</td>
+                            <td>6</td>
+                            <td>Diferentes tipos de recursos</td>
+                        </tr>
+                        <tr>
+                            <td>Elementos</td>
+                            <td>11</td>
+                            <td>Inventario diversificado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

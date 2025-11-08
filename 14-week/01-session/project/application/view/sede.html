@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏫 Gestión de Sedes</h1>
+            <p>Campus universitarios de CORHUILA</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="empresa.html">Empresa</a>
+                        <a href="sede.html" class="active">Sedes</a>
+                        <a href="bloque.html">Bloques</a>
+                        <a href="salon.html">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="categoria.html">Categorías</a>
+                        <a href="elemento.html">Elementos</a>
+                        <a href="recurso-salon.html">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Lista de Sedes</h2>
+                <p>Campus universitarios distribuidos en la ciudad</p>
+                <p><strong>Dependencia:</strong> Cada sede pertenece a una Empresa (N:1) y puede tener múltiples bloques (1:*)</p>
+            </div>
+
+            <div class="entity-content">
+                <h3>🏫 Sedes Registradas <span class="badge">2 sedes</span></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Dirección</th>
+                            <th>Empresa</th>
+                            <th>ID Empresa</th>
+                            <th>Bloques</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Sede Quirinal</strong></td>
+                            <td>Calle 123 #45-67</td>
+                            <td>CORHUILA</td>
+                            <td>1</td>
+                            <td>
+                                <a href="bloque.html" class="btn btn-secondary">Ver bloques (3)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Sede Prado Alto</strong></td>
+                            <td>Carrera 8 #9-10</td>
+                            <td>CORHUILA</td>
+                            <td>1</td>
+                            <td>
+                                <a href="bloque.html" class="btn btn-secondary">Ver bloques (4)</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cards-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <h3>🏫 Sede Quirinal</h3>
+                        <p><strong>Dirección:</strong> Calle 123 #45-67</p>
+                        <p><strong>Bloques:</strong></p>
+                        <ul>
+                            <li>Bloque A (ID: 1)</li>
+                            <li>Bloque B (ID: 2)</li>
+                            <li>Bloque C (ID: 3)</li>
+                        </ul>
+                        <p><strong>Empresa:</strong> CORHUILA (ID: 1)</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🏫 Sede Prado Alto</h3>
+                        <p><strong>Dirección:</strong> Carrera 8 #9-10</p>
+                        <p><strong>Bloques:</strong></p>
+                        <ul>
+                            <li>Bloque A (ID: 4)</li>
+                            <li>Bloque B (ID: 5)</li>
+                            <li>Bloque C (ID: 6)</li>
+                            <li>Laboratorios (ID: 7)</li>
+                        </ul>
+                        <p><strong>Empresa:</strong> CORHUILA (ID: 1)</p>
+                    </div>
+                </div>
+
+                <div class="info-section" style="margin-top: 30px;">
+                    <h3>ℹ️ Información Adicional</h3>
+                    <p><strong>Jerarquía:</strong> Empresa → <strong>Sede</strong> → Bloque → Salón</p>
+                    <p>Las sedes son los campus físicos de la universidad, cada uno con su propia infraestructura de bloques y salones.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

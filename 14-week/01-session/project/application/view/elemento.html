@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📦 Gestión de Elementos</h1>
+            <p>Inventario de recursos disponibles</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="empresa.html">Empresa</a>
+                        <a href="sede.html">Sedes</a>
+                        <a href="bloque.html">Bloques</a>
+                        <a href="salon.html">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="categoria.html">Categorías</a>
+                        <a href="elemento.html" class="active">Elementos</a>
+                        <a href="recurso-salon.html">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Lista de Elementos</h2>
+                <p>Inventario detallado de todos los recursos clasificados por categoría</p>
+                <p><strong>Dependencia:</strong> Cada elemento pertenece a una Categoría (N:1)</p>
+            </div>
+
+            <div class="entity-content">
+                <h3>📋 Elementos Registrados <span class="badge">11 elementos</span></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Categoría</th>
+                            <th>ID Categoría</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Computador HP</strong></td>
+                            <td>PC de clase HP + Cable de poder + mouse + teclado</td>
+                            <td>Computadores</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Computador Dell</strong></td>
+                            <td>PC de clase Dell + Cargador</td>
+                            <td>Computadores</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>Computador Mac</strong></td>
+                            <td>PC de clase Mac + Cargador</td>
+                            <td>Computadores</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><strong>Silla plástica</strong></td>
+                            <td>Silla de plástico color azul</td>
+                            <td>Muebles</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Mesa madera</strong></td>
+                            <td>Mesa de madera para oficina</td>
+                            <td>Muebles</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><strong>Computador HP</strong></td>
+                            <td>PC de clase HP + cargador + cable de red</td>
+                            <td>Computadores</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><strong>Silla plástica</strong></td>
+                            <td>Silla de plástico color negro</td>
+                            <td>Muebles</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><strong>Proyector Epson</strong></td>
+                            <td>Proyector de alta definición</td>
+                            <td>Videobeam</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><strong>Aire acondicionado LG</strong></td>
+                            <td>Aire acondicionado portátil</td>
+                            <td>Aire acondicionado</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><strong>Tablero blanco</strong></td>
+                            <td>Tablero blanco para marcadores</td>
+                            <td>Tablero</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><strong>Telón de proyección</strong></td>
+                            <td>Telón de proyección eléctrico</td>
+                            <td>Telón de proyección</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cards-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <h3>💻 Computadores</h3>
+                        <p><strong>Total:</strong> 4 elementos</p>
+                        <ul>
+                            <li>Computador HP (ID: 1, 6)</li>
+                            <li>Computador Dell (ID: 2)</li>
+                            <li>Computador Mac (ID: 3)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>🪑 Muebles</h3>
+                        <p><strong>Total:</strong> 3 elementos</p>
+                        <ul>
+                            <li>Silla plástica (ID: 4, 7)</li>
+                            <li>Mesa madera (ID: 5)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📽️ Equipos Audiovisuales</h3>
+                        <p><strong>Total:</strong> 4 elementos</p>
+                        <ul>
+                            <li>Proyector Epson (ID: 8)</li>
+                            <li>Aire acondicionado LG (ID: 9)</li>
+                            <li>Tablero blanco (ID: 10)</li>
+                            <li>Telón de proyección (ID: 11)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-section" style="margin-top: 20px;">
+                    <h3>ℹ️ Información Adicional</h3>
+                    <p><strong>Jerarquía:</strong> Categoría → <strong>Elemento</strong> → RecursoSalón</p>
+                    <p>Los elementos se asignan a los salones a través de la entidad RecursoSalón, indicando la cantidad disponible en cada espacio.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión - CORHUILA</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏢 Sistema de Gestión de Recursos</h1>
+            <p>Corporación Universitaria del Huila - CORHUILA</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="index.html" class="active">🏠 Inicio</a></li>
+                <li><a href="view/dashboard.html">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="view/empresa.html">Empresa</a>
+                        <a href="view/sede.html">Sedes</a>
+                        <a href="view/bloque.html">Bloques</a>
+                        <a href="view/salon.html">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="view/categoria.html">Categorías</a>
+                        <a href="view/elemento.html">Elementos</a>
+                        <a href="view/recurso-salon.html">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="welcome-section">
+                <h2>Bienvenido al Sistema de Gestión</h2>
+                <p>Este sistema permite administrar de manera eficiente los recursos y la infraestructura de CORHUILA.</p>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>🏢 Gestión Empresarial</h3>
+                        <p>Administre empresas, sedes, bloques y salones de manera organizada.</p>
+                        <ul>
+                            <li><strong>Empresa:</strong> Información institucional</li>
+                            <li><strong>Sedes:</strong> Diferentes campus universitarios</li>
+                            <li><strong>Bloques:</strong> Edificaciones por sede</li>
+                            <li><strong>Salones:</strong> Espacios de aprendizaje</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📦 Gestión de Recursos</h3>
+                        <p>Control de elementos y recursos disponibles en cada salón.</p>
+                        <ul>
+                            <li><strong>Categorías:</strong> Clasificación de recursos</li>
+                            <li><strong>Elementos:</strong> Inventario detallado</li>
+                            <li><strong>Recursos por Salón:</strong> Asignación específica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>📋 Estructura del Sistema</h3>
+                    <div class="hierarchy">
+                        <div class="hierarchy-item">
+                            <strong>Empresa</strong> → Sede → Bloque → Salón → Recursos
+                        </div>
+                        <div class="hierarchy-item">
+                            <strong>Categoría</strong> → Elemento → Recursos del Salón
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

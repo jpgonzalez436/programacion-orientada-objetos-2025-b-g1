@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📂 Gestión de Categorías</h1>
+            <p>Clasificación de recursos y elementos</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="empresa.html">Empresa</a>
+                        <a href="sede.html">Sedes</a>
+                        <a href="bloque.html">Bloques</a>
+                        <a href="salon.html">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="categoria.html" class="active">Categorías</a>
+                        <a href="elemento.html">Elementos</a>
+                        <a href="recurso-salon.html">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Lista de Categorías</h2>
+                <p>Las categorías agrupan elementos con características similares</p>
+                <p><strong>Relación:</strong> Una categoría puede tener múltiples elementos (1:*)</p>
+            </div>
+
+            <div class="entity-content">
+                <h3>📋 Categorías Registradas <span class="badge">6 categorías</span></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Elementos Asociados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Computadores</strong></td>
+                            <td>Dispositivos electrónicos</td>
+                            <td>
+                                <a href="elemento.html" class="btn btn-secondary">Ver elementos</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Muebles</strong></td>
+                            <td>Elementos de mobiliario</td>
+                            <td>
+                                <a href="elemento.html" class="btn btn-secondary">Ver elementos</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>Videobeam</strong></td>
+                            <td>Dispositivos de proyección</td>
+                            <td>
+                                <a href="elemento.html" class="btn btn-secondary">Ver elementos</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><strong>Aire acondicionado</strong></td>
+                            <td>Dispositivos de climatización</td>
+                            <td>
+                                <a href="elemento.html" class="btn btn-secondary">Ver elementos</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Tablero</strong></td>
+                            <td>Elementos de mobiliario</td>
+                            <td>
+                                <a href="elemento.html" class="btn btn-secondary">Ver elementos</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><strong>Telón de proyección</strong></td>
+                            <td>Elementos de mobiliario</td>
+                            <td>
+                                <a href="elemento.html" class="btn btn-secondary">Ver elementos</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="info-section" style="margin-top: 30px;">
+                    <h3>ℹ️ Información Adicional</h3>
+                    <p><strong>Jerarquía:</strong> Categoría → Elemento → RecursoSalón</p>
+                    <p>Cada categoría agrupa elementos relacionados que luego se asignan a los salones según necesidad.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
