@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloques - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏛️ Gestión de Bloques</h1>
+            <p>Edificaciones por sede universitaria</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="empresa.html">Empresa</a>
+                        <a href="sede.html">Sedes</a>
+                        <a href="bloque.html" class="active">Bloques</a>
+                        <a href="salon.html">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="categoria.html">Categorías</a>
+                        <a href="elemento.html">Elementos</a>
+                        <a href="recurso-salon.html">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Lista de Bloques</h2>
+                <p>Edificaciones distribuidas en las diferentes sedes</p>
+                <p><strong>Dependencia:</strong> Cada bloque pertenece a una Sede (N:1) y puede tener múltiples salones (1:*)</p>
+            </div>
+
+            <div class="entity-content">
+                <h3>🏛️ Bloques Registrados <span class="badge">7 bloques</span></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Sede</th>
+                            <th>ID Sede</th>
+                            <th>Salones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Bloque A</strong></td>
+                            <td>Sede Quirinal</td>
+                            <td>1</td>
+                            <td>
+                                <a href="salon.html" class="btn btn-secondary">Ver salones</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Bloque B</strong></td>
+                            <td>Sede Quirinal</td>
+                            <td>1</td>
+                            <td>
+                                <a href="salon.html" class="btn btn-secondary">Ver salones</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>Bloque C</strong></td>
+                            <td>Sede Quirinal</td>
+                            <td>1</td>
+                            <td>
+                                <a href="salon.html" class="btn btn-secondary">Ver salones</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><strong>Bloque A</strong></td>
+                            <td>Sede Prado Alto</td>
+                            <td>2</td>
+                            <td>
+                                <a href="salon.html" class="btn btn-secondary">Ver salones</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Bloque B</strong></td>
+                            <td>Sede Prado Alto</td>
+                            <td>2</td>
+                            <td>
+                                <a href="salon.html" class="btn btn-secondary">Ver salones (1)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><strong>Bloque C</strong></td>
+                            <td>Sede Prado Alto</td>
+                            <td>2</td>
+                            <td>
+                                <a href="salon.html" class="btn btn-secondary">Ver salones (3)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><strong>Laboratorios</strong></td>
+                            <td>Sede Prado Alto</td>
+                            <td>2</td>
+                            <td>
+                                <a href="salon.html" class="btn btn-secondary">Ver salones</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cards-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <h3>🏫 Sede Quirinal</h3>
+                        <p><strong>Total bloques:</strong> 3</p>
+                        <ul>
+                            <li><strong>Bloque A</strong> (ID: 1)</li>
+                            <li><strong>Bloque B</strong> (ID: 2)</li>
+                            <li><strong>Bloque C</strong> (ID: 3)</li>
+                        </ul>
+                        <a href="sede.html" class="btn">Ver sede</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>🏫 Sede Prado Alto</h3>
+                        <p><strong>Total bloques:</strong> 4</p>
+                        <ul>
+                            <li><strong>Bloque A</strong> (ID: 4)</li>
+                            <li><strong>Bloque B</strong> (ID: 5) - 1 salón</li>
+                            <li><strong>Bloque C</strong> (ID: 6) - 3 salones</li>
+                            <li><strong>Laboratorios</strong> (ID: 7)</li>
+                        </ul>
+                        <a href="sede.html" class="btn">Ver sede</a>
+                    </div>
+                </div>
+
+                <div class="info-section" style="margin-top: 30px;">
+                    <h3>ℹ️ Información Adicional</h3>
+                    <p><strong>Jerarquía:</strong> Empresa → Sede → <strong>Bloque</strong> → Salón</p>
+                    <p>Los bloques son las edificaciones dentro de cada sede universitaria. Cada bloque contiene múltiples salones para actividades académicas.</p>
+                    <p><strong>Distribución:</strong> 3 bloques en Quirinal y 4 bloques en Prado Alto</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

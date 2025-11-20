@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salones - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🚪 Gestión de Salones</h1>
+            <p>Espacios académicos y de aprendizaje</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="empresa.html">Empresa</a>
+                        <a href="sede.html">Sedes</a>
+                        <a href="bloque.html">Bloques</a>
+                        <a href="salon.html" class="active">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="categoria.html">Categorías</a>
+                        <a href="elemento.html">Elementos</a>
+                        <a href="recurso-salon.html">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Lista de Salones</h2>
+                <p>Espacios de aprendizaje equipados con recursos tecnológicos</p>
+                <p><strong>Dependencia:</strong> Cada salón pertenece a un Bloque (N:1) y puede tener múltiples recursos asignados (1:*)</p>
+            </div>
+
+            <div class="entity-content">
+                <h3>🚪 Salones Registrados <span class="badge">4 salones</span></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Capacidad</th>
+                            <th>Bloque</th>
+                            <th>ID Bloque</th>
+                            <th>Sede</th>
+                            <th>Recursos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>30 personas</td>
+                            <td>Bloque C</td>
+                            <td>6</td>
+                            <td>Prado Alto</td>
+                            <td>
+                                <a href="recurso-salon.html" class="btn btn-secondary">Ver recursos (7)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Salón 411</strong></td>
+                            <td>30 personas</td>
+                            <td>Bloque C</td>
+                            <td>6</td>
+                            <td>Prado Alto</td>
+                            <td>
+                                <a href="recurso-salon.html" class="btn btn-secondary">Ver recursos</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>Salón 409</strong></td>
+                            <td>30 personas</td>
+                            <td>Bloque C</td>
+                            <td>6</td>
+                            <td>Prado Alto</td>
+                            <td>
+                                <a href="recurso-salon.html" class="btn btn-secondary">Ver recursos</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><strong>Salón 208</strong></td>
+                            <td>30 personas</td>
+                            <td>Bloque B</td>
+                            <td>5</td>
+                            <td>Prado Alto</td>
+                            <td>
+                                <a href="recurso-salon.html" class="btn btn-secondary">Ver recursos</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cards-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <h3>🚪 Salón 508</h3>
+                        <p><strong>Capacidad:</strong> 30 personas</p>
+                        <p><strong>Ubicación:</strong> Bloque C - Sede Prado Alto</p>
+                        <p><strong>Recursos asignados:</strong> 7 recursos</p>
+                        <ul>
+                            <li>30 Computadores HP</li>
+                            <li>30 Sillas plásticas</li>
+                            <li>31 Mesas de madera</li>
+                            <li>1 Proyector Epson</li>
+                            <li>1 Aire acondicionado LG</li>
+                            <li>1 Tablero blanco</li>
+                            <li>1 Telón de proyección</li>
+                        </ul>
+                        <a href="recurso-salon.html" class="btn">Ver recursos detallados</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>📊 Estadísticas</h3>
+                        <p><strong>Total salones:</strong> 4</p>
+                        <p><strong>Capacidad total:</strong> 120 personas</p>
+                        <p><strong>Capacidad promedio:</strong> 30 personas/salón</p>
+                        <hr style="margin: 15px 0;">
+                        <p><strong>Distribución por bloque:</strong></p>
+                        <ul>
+                            <li>Bloque C (ID: 6): 3 salones</li>
+                            <li>Bloque B (ID: 5): 1 salón</li>
+                        </ul>
+                        <p><em>Todos ubicados en Sede Prado Alto</em></p>
+                    </div>
+                </div>
+
+                <div class="info-section" style="margin-top: 30px;">
+                    <h3>ℹ️ Información Adicional</h3>
+                    <p><strong>Jerarquía:</strong> Empresa → Sede → Bloque → <strong>Salón</strong></p>
+                    <p>Los salones son los espacios físicos donde se realizan las actividades académicas. Cada salón está equipado con recursos tecnológicos y mobiliario específico registrado en RecursoSalón.</p>
+                    <p><strong>Nota:</strong> El Salón 508 cuenta con equipamiento completo para 30 estudiantes, incluyendo tecnología audiovisual y climatización.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

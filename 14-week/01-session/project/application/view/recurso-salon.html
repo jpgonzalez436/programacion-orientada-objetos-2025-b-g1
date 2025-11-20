@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos por Salón - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔗 Gestión de Recursos por Salón</h1>
+            <p>Asignación de elementos a cada espacio académico</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">🏢 Gestión Empresarial</a>
+                    <div class="dropdown-content">
+                        <a href="empresa.html">Empresa</a>
+                        <a href="sede.html">Sedes</a>
+                        <a href="bloque.html">Bloques</a>
+                        <a href="salon.html">Salones</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">📦 Gestión de Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="categoria.html">Categorías</a>
+                        <a href="elemento.html">Elementos</a>
+                        <a href="recurso-salon.html" class="active">Recursos por Salón</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Recursos Asignados por Salón</h2>
+                <p>Control de inventario y distribución de elementos en cada espacio</p>
+                <p><strong>Dependencias:</strong> RecursoSalón depende de Salón (N:1) y Elemento (N:1)</p>
+            </div>
+
+            <div class="entity-content">
+                <h3>🔗 Recursos Registrados <span class="badge">7 asignaciones</span></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Salón</th>
+                            <th>ID Salón</th>
+                            <th>Elemento</th>
+                            <th>ID Elemento</th>
+                            <th>Cantidad</th>
+                            <th>Categoría</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>1</td>
+                            <td>Computador HP</td>
+                            <td>6</td>
+                            <td>30</td>
+                            <td>Computadores</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>1</td>
+                            <td>Silla plástica (negro)</td>
+                            <td>7</td>
+                            <td>30</td>
+                            <td>Muebles</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>1</td>
+                            <td>Mesa madera</td>
+                            <td>5</td>
+                            <td>31</td>
+                            <td>Muebles</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>1</td>
+                            <td>Proyector Epson</td>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>Videobeam</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>1</td>
+                            <td>Aire acondicionado LG</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>Aire acondicionado</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>1</td>
+                            <td>Tablero blanco</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>Tablero</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><strong>Salón 508</strong></td>
+                            <td>1</td>
+                            <td>Telón de proyección</td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>Telón de proyección</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cards-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <h3>🚪 Salón 508 - Inventario Completo</h3>
+                        <p><strong>Ubicación:</strong> Bloque C - Sede Prado Alto</p>
+                        <p><strong>Capacidad:</strong> 30 personas</p>
+                        <p><strong>Total recursos asignados:</strong> 7 tipos</p>
+                        <hr style="margin: 15px 0;">
+                        <h4>💻 Equipos Tecnológicos:</h4>
+                        <ul>
+                            <li><strong>30</strong> Computadores HP (ID: 6)</li>
+                            <li><strong>1</strong> Proyector Epson (ID: 8)</li>
+                            <li><strong>1</strong> Telón de proyección (ID: 11)</li>
+                        </ul>
+                        <h4>🪑 Mobiliario:</h4>
+                        <ul>
+                            <li><strong>30</strong> Sillas plásticas negras (ID: 7)</li>
+                            <li><strong>31</strong> Mesas de madera (ID: 5)</li>
+                            <li><strong>1</strong> Tablero blanco (ID: 10)</li>
+                        </ul>
+                        <h4>❄️ Climatización:</h4>
+                        <ul>
+                            <li><strong>1</strong> Aire acondicionado LG (ID: 9)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📊 Resumen por Categoría</h3>
+                        <p><strong>Computadores:</strong> 30 unidades</p>
+                        <p><strong>Muebles:</strong> 61 unidades (30 sillas + 31 mesas)</p>
+                        <p><strong>Videobeam:</strong> 1 unidad</p>
+                        <p><strong>Aire acondicionado:</strong> 1 unidad</p>
+                        <p><strong>Tablero:</strong> 1 unidad</p>
+                        <p><strong>Telón de proyección:</strong> 1 unidad</p>
+                        <hr style="margin: 15px 0;">
+                        <p><strong>Total elementos:</strong> 95 unidades</p>
+                        <p><em>Todos asignados al Salón 508</em></p>
+                    </div>
+                </div>
+
+                <div class="info-section" style="margin-top: 30px;">
+                    <h3>ℹ️ Información sobre las Relaciones</h3>
+                    
+                    <div class="hierarchy-item">
+                        <h4>🔗 Relación con Salón:</h4>
+                        <p><strong>RecursoSalón → Salón (N:1)</strong></p>
+                        <p>Cada registro de RecursoSalón pertenece a un único salón identificado por SalonId. Un salón puede tener múltiples recursos asignados.</p>
+                    </div>
+
+                    <div class="hierarchy-item">
+                        <h4>🔗 Relación con Elemento:</h4>
+                        <p><strong>RecursoSalón → Elemento (N:1)</strong></p>
+                        <p>Cada registro de RecursoSalón hace referencia a un elemento específico del inventario identificado por ElementoId. Un mismo elemento puede estar asignado a múltiples salones.</p>
+                    </div>
+
+                    <div class="hierarchy-item">
+                        <h4>🔗 Cadena de Dependencias Completa:</h4>
+                        <p><strong>Empresa → Sede → Bloque → Salón → RecursoSalón ← Elemento ← Categoría</strong></p>
+                        <p>RecursoSalón es la entidad integradora que conecta la estructura organizacional (Empresa-Sede-Bloque-Salón) con el inventario de recursos (Categoría-Elemento).</p>
+                    </div>
+                </div>
+
+                <div class="entity-content" style="margin-top: 30px;">
+                    <h3>📋 Detalle por Elemento</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Descripción Completa</th>
+                                <th>Cantidad Total</th>
+                                <th>Salones Asignados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Computador HP</strong></td>
+                                <td>PC de clase HP + cargador + cable de red</td>
+                                <td>30</td>
+                                <td>Salón 508</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Silla plástica</strong></td>
+                                <td>Silla de plástico color negro</td>
+                                <td>30</td>
+                                <td>Salón 508</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mesa madera</strong></td>
+                                <td>Mesa de madera para oficina</td>
+                                <td>31</td>
+                                <td>Salón 508</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Proyector Epson</strong></td>
+                                <td>Proyector de alta definición</td>
+                                <td>1</td>
+                                <td>Salón 508</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Aire acondicionado LG</strong></td>
+                                <td>Aire acondicionado portátil</td>
+                                <td>1</td>
+                                <td>Salón 508</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tablero blanco</strong></td>
+                                <td>Tablero blanco para marcadores</td>
+                                <td>1</td>
+                                <td>Salón 508</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Telón de proyección</strong></td>
+                                <td>Telón de proyección eléctrico</td>
+                                <td>1</td>
+                                <td>Salón 508</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CORHUILA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

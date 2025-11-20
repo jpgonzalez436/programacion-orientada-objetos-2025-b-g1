@@ -1,0 +1,119 @@
+@startuml
+
+' List Class
+' - Empresa, Sede, Bloque, Salon
+' - Categoria, Elemento, RecursoSalon
+
+' Atributos de la clases
+' - Categoria: id, nombre, descripcion 
+'   => 1, Computadores, Dispositivos electronicos
+'   => 2, Muebles, Elementos de mobiliario
+'   => 3, Videobeam, Dispositivos de proyección
+'   => 4, Aire acondicionado, Dispositivos de climatización
+'   => 5, Tablero, Elementos de mobiliario
+'   => 6, Telon de proyección, Elementos de mobiliario
+
+' - Elemento: id, nombre, descripcion, CategoriaId :
+'   => 1, Computador HP, PC de clase HP + Cable de poder + mouse + teclado, 1
+'   => 2, Computador Dell, PC de clase Dell + Cargador, 1
+'   => 3, Computador Mac, PC de clase Mac + Cargador, 1
+'   => 4, Silla plastica, Silla de plastico color azul, 2
+'   => 5, Mesa madera, Mesa de madera para oficina, 2
+'   => 6, Computador HP, PC de clase HP + cargador + cable de red, 1
+'   => 7, Silla plastica, Silla de plastico color negro, 2
+'   => 8, Proyector Epson, Proyector de alta definición, 3
+'   => 9, Aire acondicionado LG, Aire acondicionado portátil, 4
+'   => 10, Tablero blanco, Tablero blanco para marcadores, 5
+'   => 11, Telon de proyección, Telon de proyección eléctrico, 6
+
+' - Empresa: id, nombre, nit, direccion
+'   => 1, Corporación Universitaria del Huila - CORHUILA, 900123456-7, Calle 123
+
+' - Sede: id, nombre, direccion, EmpresaId
+'   => 1, Sede Quirinal, Calle 123 #45-67, 1
+'   => 2, Sede Prado Alto, Carrera 8 #9-10, 1
+
+' - Bloque: id, nombre, SedeId
+'   => 1, Bloque A, 1
+'   => 2, Bloque B, 1
+'   => 3, Bloque C, 1
+'   => 4, Bloque A, 2
+'   => 5, Bloque B, 2
+'   => 6, Bloque C, 2
+' - => 7, Laboratorios, 2
+
+' - Salon: id, nombre, capacidad, BloqueId
+'   => 1, Salon 508, 30, 6
+'   => 2, Salon 411, 30, 6
+'   => 3, Salon 409, 30, 6
+'   => 4, Salon 208, 30, 5
+
+' - RecursoSalon: id, SalonId, ElementoId, cantidad
+'   => 1, 1, 6, 30
+'   => 2, 1, 7, 30
+'   => 3, 1, 5, 31
+'   => 4, 1, 8, 1
+'   => 5, 1, 9, 1
+'   => 6, 1, 10, 1
+'   => 7, 1, 11, 1
+
+class Categoria {
+    +id: int
+    +nombre: string
+    +descripcion: string
+}
+class Elemento {
+    +id: int
+    +nombre: string
+    +descripcion: string
+    +CategoriaId: int
+}
+
+class Empresa {
+    +id: int
+    +nombre: string
+    +nit: string
+    +direccion: string
+}
+
+class Sede {
+    +id: int
+    +nombre: string
+    +direccion: string
+    +EmpresaId: int
+}
+
+class Bloque {
+    +id: int
+    +nombre: string
+    +SedeId: int
+}
+
+class Salon {
+    +id: int
+    +nombre: string
+    +capacidad: int
+    +BloqueId: int
+}
+
+class RecursoSalon {
+    +id: int
+    +SalonId: int
+    +ElementoId: int
+    +cantidad: int
+}
+
+Categoria "1" -- "0..*" Elemento : contiene >
+Empresa "1" -- "0..*" Sede : posee >
+Sede "1" -- "0..*" Bloque : tiene >
+Bloque "1" -- "0..*" Salon : incluye >
+Salon "1" -- "0..*" RecursoSalon : dispone >
+Elemento "1" -- "0..*" RecursoSalon : es parte de >
+
+' Categoria --- Elemento : "1..*"
+' Empresa --- Sede : "1..*"
+' Sede --- Bloque : "1..*"
+' Bloque --- Salon : "1..*"
+' Salon --- RecursoSalon : "1..*"
+' Elemento --- RecursoSalon : "1..*"
+@enduml
