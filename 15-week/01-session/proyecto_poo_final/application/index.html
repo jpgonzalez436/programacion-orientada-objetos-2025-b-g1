@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Impresoras 3D - Inicio</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sistema de Gestión de Impresoras 3D</h1>
+            <p>Laboratorio de Mecatrónica – FABLAB</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="view/dashboard.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Impresoras 3D</a>
+                    <div class="dropdown-content">
+                        <a href="view/impresoras.html">Listado de impresoras</a>
+                        <a href="view/historial.html">Historial de uso</a>
+                        <a href="view/solicitudes.html">Solicitudes de uso</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="welcome-section">
+                <h2>Resumen del sistema</h2>
+                <p>
+                    Este sistema simula la gestión del uso de cuatro impresoras 3D
+                    ubicadas en el laboratorio FABLAB del segundo piso. El objetivo es:
+                </p>
+                <ul>
+                    <li>Registrar solicitudes de uso realizadas por estudiantes.</li>
+                    <li>Simular la aprobación por parte de un administrador.</li>
+                    <li>Controlar el estado de cada impresora (disponible o en uso).</li>
+                    <li>Conservar un historial de impresiones realizadas.</li>
+                </ul>
+            </section>
+
+            <section class="cards-grid">
+                <div class="card">
+                    <h3>Impresoras 3D</h3>
+                    <p><strong>Total:</strong> 4 impresoras CR-10.</p>
+                    <p>Identificadas con los códigos 4020, 4021, 4022 y 4023.</p>
+                    <a href="view/impresoras.html" class="btn">Ver impresoras</a>
+                </div>
+
+                <div class="card">
+                    <h3>Solicitudes de uso</h3>
+                    <p>El sistema permite registrar solicitudes con:</p>
+                    <ul>
+                        <li>Nombre y código del estudiante.</li>
+                        <li>Facultad (1, 2 o 3).</li>
+                        <li>Tiempo estimado de uso.</li>
+                        <li>Cantidad de material en gramos.</li>
+                    </ul>
+                    <a href="view/solicitudes.html" class="btn">Ver solicitudes</a>
+                </div>
+
+                <div class="card">
+                    <h3>Historial de impresiones</h3>
+                    <p>Se conserva el registro de impresiones ya realizadas:</p>
+                    <ul>
+                        <li>Fecha y duración de la impresión.</li>
+                        <li>Estudiante responsable.</li>
+                        <li>Facultad y cantidad de material usado.</li>
+                    </ul>
+                    <a href="view/historial.html" class="btn">Ver historial</a>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h3>Reglas básicas del sistema</h3>
+                <div class="hierarchy">
+                    <div class="hierarchy-item">
+                        <strong>Uso por reserva:</strong> todas las impresiones pasan primero por una solicitud.
+                    </div>
+                    <div class="hierarchy-item">
+                        <strong>Aprobación obligatoria:</strong> solo el administrador (modo consola) puede aprobar.
+                    </div>
+                    <div class="hierarchy-item">
+                        <strong>Una impresión por día:</strong> cada impresora solo puede tener una impresión por día.
+                    </div>
+                    <div class="hierarchy-item">
+                        <strong>Estados:</strong> la impresora pasa de disponible a en uso y luego vuelve a disponible
+                        cuando la impresión finaliza.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Sistema de Gestión de Impresoras 3D – Proyecto POO 2025B</p>
+        </div>
+    </footer>
+</body>
+</html>

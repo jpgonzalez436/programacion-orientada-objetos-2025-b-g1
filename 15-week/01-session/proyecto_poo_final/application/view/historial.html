@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de uso - Impresoras 3D</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Historial de uso de impresoras 3D</h1>
+            <p>Registros de impresiones realizadas en el laboratorio</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Impresoras 3D</a>
+                    <div class="dropdown-content">
+                        <a href="impresoras.html">Listado de impresoras</a>
+                        <a href="historial.html" class="active">Historial de uso</a>
+                        <a href="solicitudes.html">Solicitudes de uso</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="entity-header">
+                <h2>Historial de impresiones (ejemplo)</h2>
+                <p>
+                    En el backend se puede consultar el historial por impresora y fecha.
+                    Aquí se muestra un ejemplo de cómo se verían algunos registros.
+                </p>
+            </div>
+
+            <div class="entity-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID solicitud</th>
+                            <th>Fecha</th>
+                            <th>Código impresora</th>
+                            <th>Estudiante</th>
+                            <th>Código estudiante</th>
+                            <th>Facultad</th>
+                            <th>Duración (min)</th>
+                            <th>Material usado (g)</th>
+                            <th>Estado final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>11/05/2025</td>
+                            <td>4020</td>
+                            <td>Laura Herrera</td>
+                            <td>1724227001</td>
+                            <td>1 - Mecatrónica</td>
+                            <td>90</td>
+                            <td>70</td>
+                            <td>Finalizada</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>11/06/2025</td>
+                            <td>4022</td>
+                            <td>Carlos Medina</td>
+                            <td>1724227002</td>
+                            <td>2 - Renovables</td>
+                            <td>120</td>
+                            <td>100</td>
+                            <td>Finalizada</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>11/07/2025</td>
+                            <td>4021</td>
+                            <td>Sofía Ramírez</td>
+                            <td>1724227003</td>
+                            <td>1 - Mecatrónica</td>
+                            <td>60</td>
+                            <td>40</td>
+                            <td>Finalizada</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>11/08/2025</td>
+                            <td>4023</td>
+                            <td>Diego Pineda</td>
+                            <td>1724227004</td>
+                            <td>3 - Industrial</td>
+                            <td>150</td>
+                            <td>130</td>
+                            <td>Finalizada</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p style="margin-top: 20px;">
+                    En la implementación real, el historial se construye a partir de
+                    las solicitudes con estado <strong>FINALIZADA</strong> que se
+                    almacenan en memoria en el módulo de Python.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Sistema de Impresoras 3D – Historial de uso</p>
+        </div>
+    </footer>
+</body>
+</html>
